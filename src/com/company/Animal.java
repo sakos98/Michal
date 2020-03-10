@@ -1,5 +1,7 @@
 package com.company;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.File;
 
 public class Animal
@@ -25,6 +27,13 @@ public class Animal
             this.weight = DEFAULT_MOUSE_WEIGHT;
         }
     }
+
+    void walk()
+    {
+        weight--;
+        System.out.println("thx for time with me bro" + weight);
+    }
+
 
     void feed()
     {
