@@ -9,23 +9,21 @@ public class Animal
     private Double weight = 7.5;
     File pic;
 
-    static final Double Default_dog_weight;
+    static final Double DEFAULT_DOG_WEIGHT = 8.0;
+    static final Double DEFAULT_LION_WEIGHT = 190.0;
+    static final Double DEFAULT_MOUSE_WEIGHT = 0.50;
 
-    static {
-        Default_dog_weight = 8.0;
-    }
+
 
     public Animal(String species) {
         this.species = species;
         if(species =="dog"){
-            this.weight = 8.0;}
+            this.weight = DEFAULT_DOG_WEIGHT; }
             else if (species == "lion"){
-                this.weight = 190.0;}
+                this.weight = DEFAULT_LION_WEIGHT;}
                 else if (species =="mouse") {
-                    this.weight = 0.05;
-                }
-
-
+            this.weight = DEFAULT_MOUSE_WEIGHT;
+        }
     }
 
     void feed()
