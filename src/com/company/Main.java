@@ -12,13 +12,10 @@ public class Main {
         lion.name = "leo";
 
         dog.feed();
-        dog.feed();
-        dog.feed();
-        dog.feed();
-        dog.feed();
+
 
         Human me = new Human();
-        me.firstName = "Kowalski";
+        me.firstName = "Michal";
         me.lastName = "Sak";
         me.pet = dog;
 
